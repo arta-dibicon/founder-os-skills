@@ -1,0 +1,6 @@
+{slug}-general|Alles Projektübergreifende, Announcements, Orga
+{slug}-content|Content-Pipeline, Reels, Repurposing
+{slug}-shop-ads|Shop/CRO, Meta+Google Ads, Performance
+{slug}-products|Produkt-Launches, Bundles, Reviews
+{slug}-community|Community-Aufbau, Gruppen, Live-Calls
+{slug}-ops|Finanzen, Reporting, Rechnungen, Legal

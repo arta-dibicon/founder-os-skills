@@ -1,0 +1,509 @@
+{
+  "schema_version": "1.0",
+  "marketplace": "founder-os-skills",
+  "updated_at": "2026-05-28",
+  "version": "0.2.0",
+  "tiers": {
+    "universal": "Wird IMMER installiert. Egal welcher Owner.",
+    "core": "Wird in den meisten Setups installiert. COO empfiehlt im Onboarding.",
+    "growth_marketing": "Skills für Inhaber mit Marketing-Bedarf (Funnels, Ads, Email, SEO).",
+    "content_creation": "Skills für Content-Creator (Carousels, Videos, Visuals).",
+    "ecommerce": "Skills für E-Commerce-Owner (Shopify, Stripe, Checkout).",
+    "diagnostics": "Skills für Daten-getriebene Owner (Analytics, Attribution, Cohorts).",
+    "tooling": "Cross-cutting Helpers (Transcribe, Workspace-Setup, Token-Efficiency)."
+  },
+  "skills": [
+    {
+      "name": "ad-copy",
+      "tier": "growth_marketing",
+      "description": "Ad Copy skill.",
+      "auto_install": false
+    },
+    {
+      "name": "ad-creative",
+      "tier": "growth_marketing",
+      "description": "Erstelle Ad Creatives (statische Bilder + Copy) für Meta/Facebook Ads. TRIGGER wenn the Owner sagt 'Ad Creatives für [X]', 'Werbeanzeigen erstellen', 'Facebook Ads Bilder', 'Creatives bauen', oder '/ad-creative [Produkt]'. Auch bei 'Static Ads', '...",
+      "auto_install": false
+    },
+    {
+      "name": "advertorial",
+      "tier": "growth_marketing",
+      "description": "Erstelle eine komplette Advertorial-Landing-Page (HTML) für ein Produkt. TRIGGER wenn the Owner sagt 'Advertorial für [X]', 'Editorial für [X]', 'Pre-Sale Page bauen', oder '/advertorial [Produkt]'. Auch bei 'Advertorial erstellen', 'Editorial-Page'.",
+      "auto_install": false
+    },
+    {
+      "name": "ano-attribution-model",
+      "tier": "diagnostics",
+      "description": "Use wenn Channel-Attribution gebraucht wird (welcher Touchpoint hat wieviel beigetragen). Default Last-Touch plus Self-Report-Survey-Boost (\"Wo hast du uns gefunden?\"). Markov-Chain-Attribution NUR für Projekte mit >500 Conversions/Monat (innerhal...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-benchmark-library",
+      "tier": "diagnostics",
+      "description": "Use wenn Ano Benchmark-Werte für ein Projekt braucht (CTR/CPM/CPC/CVR/AOV/Open-Rate/Click-Rate-Ranges, Channel-Mix-Patterns, Pricing-Anker, Creative-Patterns, Red-Flags). Liest primär aus `[projekt]/_research/benchmark_anchors.md` (von Rechit gepf...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-cohort-analysis",
+      "tier": "diagnostics",
+      "description": "Use für eCom-Projekte (Within, PLC, Wayro, künftige Shops) wenn RFM-Segmentation, Retention-Curves oder LTV-Buckets gebraucht werden. Berechnet `champions`, `at-risk`, `lost`, `new`, `loyal` Buckets wöchentlich. Triggert Flow-Empfehlungen für Klav...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-data-pull-adhoc",
+      "tier": "diagnostics",
+      "description": "Use when Ano needs manual or on-demand backfill of historical data, re-sync after API-Token-Wechsel, or one-shot pulls für eine spezifische Analyse-Frage. Trigger wenn the Owner sagt \"zieh mal die letzten 90 Tage Meta-Daten\", \"sync nochmal Pipedri...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-data-pull-cron",
+      "tier": "diagnostics",
+      "description": "Use when Ano needs scheduled data pulls from connected sources (Meta Ads, Klaviyo/Brevo, ManyChat, Bitly, Shopify, Pipedrive, Plausible/GA4, Stripe, Pixel/CAPI) and writes raw payloads into the Supabase Bronze layer. Trigger this when the Owner sa...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-data-quality-checker",
+      "tier": "diagnostics",
+      "description": "Use als Pre-Flight vor jeder Diagnose oder Snapshot. Prüft ob Daten frisch sind (Bronze-Layer-Aktualität <24h), ob Pulls erfolgreich liefen (kein Error-State im Pull-Log), ob Schema-Drift aufgetreten ist (neue/fehlende Felder in API-Responses) und...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-drift-detection",
+      "tier": "diagnostics",
+      "description": "Use wenn Metriken auf Anomalien oder Trends geprüft werden sollen (Spend, ROAS, CPM, Open-Rate, AOV, CAC). Methoden Z-Score (Rolling 14d) plus EWMA (für langsame Drifts). Triggert Alert NUR wenn 3 aufeinanderfolgende Tage über Schwellwert (Single-...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-funnel-diagnostics",
+      "tier": "diagnostics",
+      "description": "Core-Diagnose-Engine von Ano. Use wenn Symptom-Pattern (Metric-Kombinationen) interpretiert werden sollen. Beispiele \"Hohe CTR + niedrige CVR → LP-Mismatch?\", \"Hohe Add-to-Cart + niedrige Purchase → Checkout-Friction?\", \"ROAS sinkt 30% in 7 Tagen ...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-recommendation-engine",
+      "tier": "diagnostics",
+      "description": "Use wenn aus Diagnosen konkrete Action-Items abgeleitet werden sollen. Wandelt Hypothesen aus `ano-funnel-diagnostics` plus Drift-Findings plus Cohort-Patterns in priorisierte Recommendations um. Hybrid Rule-Based (Templates pro Diagnose-Typ) plus...",
+      "auto_install": false
+    },
+    {
+      "name": "ano-snapshot-builder",
+      "tier": "diagnostics",
+      "description": "Use für 60-Sekunden-Health-Check eines Projekts. Liefert kompakten Status-Output (Spend/ROAS/CAC/Conv/Drift-Flags/Top-3-Recommendations) in plain Markdown mit Unicode-Sparklines. Für Telegram-Bot oder the COO-Briefing geeignet. Per-Vertical-KPI-Se...",
+      "auto_install": false
+    },
+    {
+      "name": "autoresearch",
+      "tier": "universal",
+      "description": "Autonomous Goal-directed Iteration. Apply Karpathy's autoresearch principles to ANY task. Loops autonomously — modify, verify, keep/discard, repeat. Supports bounded iteration via Iterations: N inline config.",
+      "auto_install": true
+    },
+    {
+      "name": "brand-guidelines",
+      "tier": "core",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel",
+      "tier": "content_creation",
+      "description": "Orchestrator-Skill für das Carousel-System. the Owner liefert Topic/Content + wählt einen der 7 Stile, ich route auf den Style-Skill und rendere PNGs. Frag nach Stil wenn unklar.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-cinematic-wisdom",
+      "tier": "content_creation",
+      "description": "Rendert Carousels im \"Book of Wisdom\"-Stil — AI-generierte cinematische BGs (Tempel/Göttinnen/Ancient-Vibes), Gold-Zahl Cinzel, Serif-Titel, Magenta-CTA-Banner. 1 Hero-Slide oder IG-Listicle.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-creator-class-grid",
+      "tier": "content_creation",
+      "description": "Rendert Carousels im OACE-Style — Dunkelgrau Pixel-Grid, Inter Bold, Pink-Peach-Gradient-Keywords, rote hand-gezeichnete Kreise, Card-Mockups. Für Creator-Content-Tipps, Hook-Templates, Skripting-Regeln.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-dark-metallic-lab",
+      "tier": "content_creation",
+      "description": "Rendert Carousels im Dark-Metallic-Lab-Stil — Schwarz-Grunge-BG, Gold-Gradient Hero-Term (Oswald), Frosted-Glass-Cards, roter WICHTIG-Footer. Perfekt für Peptide/Supplements/Team-[brand]-Deep-Dives.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-desk-paper-note",
+      "tier": "content_creation",
+      "description": "Rendert Carousels im Gannon-Meyer-Flatlay-Style — AI-generiertes grünes Cutting-Mat mit Props, Paper-Notes mit Sharpie-Handschrift, 4:5-Format. Für Tutorial-Content, Indie-Vibe, Hand-made-Feeling.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-hand-held-card",
+      "tier": "content_creation",
+      "description": "Rendert Quote-Carousels im atmosphärischen \"Late-Night-Desk\"-Stil — AI-generiertes warmes Bokeh-Zimmer, Index-Card mit Sharpie-Handschrift, rotem Squiggle-Underline und Flourish-Signoff. Für Quote-Posts, personal-branding, intime Wisdom-Content.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-handwritten-zine",
+      "tier": "content_creation",
+      "description": "Rendert Instagram/LinkedIn-Carousels im \"Handwritten Zine\"-Stil (Creme-BG, Kalam-Handschrift, Gelb+Grün-Highlighter, blaue Hand-Frames um Screenshots). Liefert PNGs pro Slide.",
+      "auto_install": false
+    },
+    {
+      "name": "carousel-news-breaking-dark",
+      "tier": "content_creation",
+      "description": "Rendert Carousels im Breaking-News-Stil — Dunkler Grunge-BG, Bebas Neue Headlines, rote \"BREAKING NEWS\"-Blocks, gelb-gold Keywords. Für Opinion-Pieces, Platform-Updates, Hot-Takes.",
+      "auto_install": false
+    },
+    {
+      "name": "chat-indexing",
+      "tier": "universal",
+      "description": "Speichert Chat-Sessions strukturiert mit Conversation-Starter. Trigger durch Owner via \"Indexier den Chat\" oder \"Chat speichern\".",
+      "auto_install": true
+    },
+    {
+      "name": "checkout",
+      "tier": "ecommerce",
+      "description": "Erstelle einen kompletten Checkout-Flow (Stripe Payment Link + Success-Page + Tracking) für ein digitales Produkt. TRIGGER wenn the Owner sagt 'Checkout bauen', 'Stripe aufsetzen', 'Payment einrichten', oder '/checkout [Produkt]'.",
+      "auto_install": false
+    },
+    {
+      "name": "copy-ad",
+      "tier": "growth_marketing",
+      "description": "Meta Ad, Facebook Ad, Instagram Ad, Primary Text, Ad Copy, Werbeanzeige, FB-Ad-Text, IG Ad Text, Headline für Ad, Ad Hook, Hook für Werbung, Werbetext kurz, Paid Social Copy, Meta Ads, FB/IG Primary Text",
+      "auto_install": false
+    },
+    {
+      "name": "copy-email",
+      "tier": "growth_marketing",
+      "description": "Email, Email-Sequenz, Email Subject Line, Newsletter, Email Body, Welcome-Sequenz, Launch-Sequenz, Reaktivierungs-Email, Email Marketing Copy, Subject Line, Pre-Header, Newsletter-Text, Email-Funnel, Email-Sales-Sequenz",
+      "auto_install": false
+    },
+    {
+      "name": "copy-listicle",
+      "tier": "growth_marketing",
+      "description": "Advertorial-Listicle, Sales Page, Long-Form Sales Page, X Gründe Pages, Listicle Advertorial, '5 Gründe', '7 Reasons', '9 Reasons Why', Product Sales Page, E-Commerce Long-Form, Listicle Copy, Listicle Article",
+      "auto_install": false
+    },
+    {
+      "name": "copy-vsl",
+      "tier": "growth_marketing",
+      "description": "VSL-Skripte, Video Sales Letter, Sales-Letter, Webinar-Skript, Long-Form Transformation-Story, Story-Hook-Skripte, Story-Sales-Page, 30-Min Video Script, VSL Script, Video Sales Letter copy, Long-Form Sales Page Story-Arc",
+      "auto_install": false
+    },
+    {
+      "name": "dream",
+      "tier": "universal",
+      "description": "Memory consolidation — bereinigt, komprimiert und dedupliziert alle Memory-Files. Entfernt Duplikate, löst Widersprüche auf, konvertiert relative Daten in absolute und baut den Memory-Index neu auf.",
+      "auto_install": true
+    },
+    {
+      "name": "founder-os-context-harvest",
+      "tier": "universal",
+      "description": "Scrappt public Content des Owners (YouTube/IG/TikTok/Website/Podcast/LinkedIn/Newsletter) und synthetisiert daraus voice_sample.md plus voice_skill_draft.md plus business_synthesis.md. Wird nach Owner-Interview im Hintergrund gestartet, läuft 24-72h.",
+      "auto_install": true
+    },
+    {
+      "name": "founder-os-fathom-sync",
+      "tier": "tooling",
+      "description": "Holt on-demand Meeting-Transkripte + Summaries aus Fathom. Speichert sauber im Workspace und extrahiert Action-Items. Pull-Modell, kein Cron.",
+      "auto_install": false
+    },
+    {
+      "name": "founder-os-telegram-coo",
+      "tier": "universal",
+      "description": "Telegram-Bot der den COO über Sprachnachrichten erreichbar macht. Empfängt Voice, transkribiert via Whisper, antwortet via Claude. Wird im Setup-Tag in Phase C live deployed.",
+      "auto_install": true
+    },
+    {
+      "name": "frontend-design",
+      "tier": "content_creation",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React c...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-ab-test-setup",
+      "tier": "growth_marketing",
+      "description": "When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-ai-seo",
+      "tier": "growth_marketing",
+      "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'L...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-analytics-tracking",
+      "tier": "growth_marketing",
+      "description": "When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"conversion tracking,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"an...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-churn-prevention",
+      "tier": "growth_marketing",
+      "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies. Also use when the user mentions 'churn,' 'cancel flow,' 'offboarding,' 'save offer,' 'dunning,' 'failed ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-cold-email",
+      "tier": "growth_marketing",
+      "description": "Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails, prospecting emails, cold email campaigns, sales development emails, or SDR emails. Also use when the user mentions \"cold outreac...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-community-marketing",
+      "tier": "growth_marketing",
+      "description": "Build and leverage online communities to drive product growth and brand loyalty. Use when the user wants to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocates, increase word-of-mouth,...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-competitor-alternatives",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when the user mentions 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-content-strategy",
+      "tier": "growth_marketing",
+      "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also use when the user mentions \"content strategy,\" \"what should I write about,\" \"content ideas,\" \"blog strategy,\" \"topic clusters,\"...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-copy-editing",
+      "tier": "growth_marketing",
+      "description": "When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-copywriting",
+      "tier": "growth_marketing",
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says \"write copy for,\" \"improve this copy,\" \"rew...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-customer-research",
+      "tier": "growth_marketing",
+      "description": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysis,\" \"support ticket analysi...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-email-sequence",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboarding emails,\" \"welcome sequ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-form-cro",
+      "tier": "growth_marketing",
+      "description": "When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions \"form optimization,\" \"l...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-free-tool-strategy",
+      "tier": "growth_marketing",
+      "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness. Also use when the user mentions \"engineering as marketing,\" \"free tool,\" \"marketing tool,\" \"calculator,\" \"generato...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-launch-strategy",
+      "tier": "growth_marketing",
+      "description": "When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user mentions 'launch,' 'Product Hunt,' 'feature release,' 'announcement,' 'go-to-market,' 'beta launch,' 'early access,' 'waitlist,' 'produ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-lead-magnets",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat sheet,\" \"checklist,\" \"template ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-marketing-ideas",
+      "tier": "growth_marketing",
+      "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product. Also use when the user asks for 'marketing ideas,' 'growth ideas,' 'how to market,' 'marketing strategies,' 'marketing tactics,' 'ways to promote,'...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-marketing-psychology",
+      "tier": "growth_marketing",
+      "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing. Also use when the user mentions 'psychology,' 'mental models,' 'cognitive bias,' 'persuasion,' 'behavioral science,' 'why people buy,' 'decis...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-onboarding-cro",
+      "tier": "growth_marketing",
+      "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also use when the user mentions \"onboarding flow,\" \"activation rate,\" \"user activation,\" \"first-run experience,\" \"empty states,\" \"onbo...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-page-cro",
+      "tier": "growth_marketing",
+      "description": "When the user wants to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages, feature pages, or blog posts. Also use when the user says \"CRO,\" \"conversion rate optimization,\" \"this page...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-paid-ads",
+      "tier": "growth_marketing",
+      "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audie...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-paywall-upgrade-cro",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use when the user mentions \"paywall,\" \"upgrade screen,\" \"upgrade modal,\" \"upsell,\" \"feature gate,\" \"convert free to paid,\" \"freemium ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-popup-cro",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes. Also use when the user mentions \"exit intent,\" \"popup conversions,\" \"modal optimization,\" \"lead capture popup,\" \"email popup,\" \"anno...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-pricing-strategy",
+      "tier": "growth_marketing",
+      "description": "When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingne...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-product-marketing-context",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create or update their product marketing context document. Also use when the user mentions 'product context,' 'marketing context,' 'set up context,' 'positioning,' 'who is my target audience,' 'describe my product,' 'ICP,' '...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-programmatic-seo",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions \"programmatic SEO,\" \"template pages,\" \"pages at scale,\" \"directory pages,\" \"location pages,\" \"[keyword] + [city] pages,\" \"comparison ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-referral-program",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-revops",
+      "tier": "growth_marketing",
+      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' ...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-sales-enablement",
+      "tier": "growth_marketing",
+      "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also use when the user mentions 'sales deck,' 'pitch deck,' 'one-pager,' 'leave-behind,' 'objection handling,' 'deal-specific ROI an...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-schema-markup",
+      "tier": "growth_marketing",
+      "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site. Also use when the user mentions \"schema markup,\" \"structured data,\" \"JSON-LD,\" \"rich snippets,\" \"schema.org,\" \"FAQ schema,\" \"product schema,\" \"review sch...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-seo-audit",
+      "tier": "growth_marketing",
+      "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic drop...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-signup-flow-cro",
+      "tier": "growth_marketing",
+      "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the user mentions \"signup conversions,\" \"registration friction,\" \"signup form optimization,\" \"free trial signup,\" \"reduce signup dropo...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-site-architecture",
+      "tier": "growth_marketing",
+      "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking. Also use when the user mentions \"sitemap,\" \"site map,\" \"visual sitemap,\" \"site structure,\" \"page hierarchy,\" \"informat...",
+      "auto_install": false
+    },
+    {
+      "name": "gm-social-content",
+      "tier": "growth_marketing",
+      "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms. Also use when the user mentions 'LinkedIn post,' 'Twitter thread,' 'social media,' 'content...",
+      "auto_install": false
+    },
+    {
+      "name": "human-voice",
+      "tier": "universal",
+      "description": "Macht jeden geschriebenen Output menschlich klingen — entfernt AI-Marker und wendet projektspezifische Brand-Voice an. UNIVERSAL Skill, gilt für alle Projekte. Lädt automatisch die globale Anti-AI-Voice Regel + das passende Projekt-Voice-Profil (z...",
+      "auto_install": true
+    },
+    {
+      "name": "listicle",
+      "tier": "content_creation",
+      "description": "Erstelle eine komplette Listicle-Landing-Page (HTML) für ein Produkt. TRIGGER wenn the Owner sagt 'Listicle für [X]', 'Baue eine Listicle-Page', '7 Gründe Seite', oder '/listicle [Produkt]'. Auch bei 'Listicle erstellen', 'Gründe-Page bauen'.",
+      "auto_install": false
+    },
+    {
+      "name": "meta-ads",
+      "tier": "growth_marketing",
+      "description": "Meta Ads skill.",
+      "auto_install": false
+    },
+    {
+      "name": "nachtschicht",
+      "tier": "tooling",
+      "description": "Starte die Nachtschicht — sammle Aufgaben von the Owner, bereite Task-Files vor, starte parallele Claude-Agenten über Nacht, präsentiere morgens einen sauberen Report.",
+      "auto_install": false
+    },
+    {
+      "name": "product-research",
+      "tier": "core",
+      "description": "Finde und validiere Produkte für einen Markt — basierend auf Zielgruppenanalyse. TRIGGER wenn the Owner sagt 'Welches Produkt sollen wir verkaufen?', 'Produktrecherche für [X]', 'Was können wir in [Nische] verkaufen?', oder '/product-research [Nis...",
+      "auto_install": false
+    },
+    {
+      "name": "quizfunnel",
+      "tier": "growth_marketing",
+      "description": "Erstelle einen kompletten Quiz-Funnel (HTML/CSS/JS) für ein Produkt. TRIGGER wenn the Owner sagt 'Quizfunnel für [X]', 'Quiz bauen', 'Quiz-Funnel erstellen', oder '/quizfunnel [Produkt]'. Auch bei 'interaktiver Funnel', 'Quiz-Landing-Page'.",
+      "auto_install": false
+    },
+    {
+      "name": "skill-creator",
+      "tier": "tooling",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance ana...",
+      "auto_install": false
+    },
+    {
+      "name": "system-upgrade",
+      "tier": "tooling",
+      "description": "Wöchentlicher Self-Upgrade — prüft Neuigkeiten, reviewed Setup, macht konkrete Verbesserungsvorschläge",
+      "auto_install": false
+    },
+    {
+      "name": "target-audience",
+      "tier": "core",
+      "description": "Erstelle eine komplette Zielgruppenanalyse für einen neuen Markt. TRIGGER wenn the Owner sagt 'Analysiere die Zielgruppe für [X]', 'Wir gehen in den Markt [X]', 'Zielgruppenanalyse für [X]', oder '/target-audience [Nische] [Land]'. Auch bei 'Wer k...",
+      "auto_install": false
+    },
+    {
+      "name": "token-efficiency",
+      "tier": "core",
+      "description": "Token optimization best practices for cost-effective Claude Code usage. Automatically applies efficient file reading, command execution, and output handling strategies. Includes model selection guidance (Opus for learning, Sonnet for development/d...",
+      "auto_install": true
+    },
+    {
+      "name": "tracking",
+      "tier": "diagnostics",
+      "description": "Tracking skill.",
+      "auto_install": false
+    },
+    {
+      "name": "transcribe",
+      "tier": "universal",
+      "description": "Transkribiere ein YouTube-Video oder Web-Video. TRIGGER wenn der User einen YouTube-Link sendet (youtube.com, youtu.be) oder explizit nach Transkription fragt. Auch bei \"transkribier das\", \"was sagt er im Video\", oder ähnlichen Anfragen mit Video-...",
+      "auto_install": true
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "tier": "content_creation",
+      "description": "UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwin...",
+      "auto_install": false
+    },
+    {
+      "name": "workspace-setup",
+      "tier": "universal",
+      "description": "Vollständiges Google Workspace Setup — von Zero zu \"the COO hat Superadmin-Zugriff auf alles\". Erstellt GCP-Projekt, aktiviert APIs, baut Service Account mit Domain-Wide Delegation, richtet Shared Drive + Ordner + Chat Spaces ein, testet 8 APIs.",
+      "auto_install": true
+    }
+  ]
+}
