@@ -13,7 +13,7 @@ Long-Form Listicle-Sales-Page Copywriting nach dem 7-Section Listicle Anatomy Ba
 - Listicle-Format ("X Gründe warum...", "7 Reasons Why...", "9 Gründe für...")
 - E-Commerce / Consumer Product / Mid-Ticket-Preis (€20-€500)
 - Awareness Stage 1-3 (Unaware bis Solution-Aware)
-- Junsei Cookware, PLC Bundle-Page, the Founder E-Comm Side, [brand] Merch Listicle
+- [brand] Cookware, [brand] Bundle-Page, the Founder E-Comm Side, [brand] Merch Listicle
 - Brief enthält "Listicle", "Advertorial", "Gründe", "Sales Page", "PDP Long-Form", "E-Comm Page"
 
 ## When NOT to use
@@ -32,7 +32,7 @@ Long-Form Listicle-Sales-Page Copywriting nach dem 7-Section Listicle Anatomy Ba
 
 ### Step 1: Read Project Context
 
-- Erkenne welches Projekt (team-madsen merch / pretty-little-cakes / within-supplements / eCommerce-Junsei / peptide-venture etc.).
+- Erkenne welches Projekt ([brand] merch / [brand] / [brand] / [brand] / [brand] etc.).
 - Projekt-`CLAUDE.md` ist auto-loaded.
 - Audience-Research suchen in:
   - `[project]/zielgruppen/`
@@ -46,9 +46,9 @@ Long-Form Listicle-Sales-Page Copywriting nach dem 7-Section Listicle Anatomy Ba
 - Read `references/POINTERS.md` für Pfade.
 - Lies `_universal-patterns.md` (Sektionen 0, 1, 2 (Pattern 9 Listicle Anatomy!), 5, 6, Section 7 #5 Taima-Template, Section 7 honorable mention MudWtr).
 - Lies passenden Cluster:
-  - within-supplements / the Founder / health-supplements → `health-wellness.md`
-  - PLC / the Owner / fitness-baking / dessert-product → `beauty-skincare.md` + `consumer-products.md`
-  - [brand] merch / Junsei Titanium / e-commerce / coffee / accessories → `consumer-products.md`
+  - [brand] / the Founder / health-supplements → `health-wellness.md`
+  - [brand] / the Owner / fitness-baking / dessert-product → `beauty-skincare.md` + `consumer-products.md`
+  - [brand] merch / [brand] Titanium / e-commerce / coffee / accessories → `consumer-products.md`
   - Peptide-Venture E-Comm-Side → `health-wellness.md`
 
 ### Step 3: Determine Schwartz Coordinates
@@ -58,10 +58,10 @@ Long-Form Listicle-Sales-Page Copywriting nach dem 7-Section Listicle Anatomy Ba
 - **Mass Desire activated**
 
 Defaults wenn nicht explizit gebrieft:
-- Junsei Titanium: Stage 4 / Awareness 2-3 / Survival+Approval (Counterfeit-Moat-Angle)
+- [brand] Titanium: Stage 4 / Awareness 2-3 / Survival+Approval (Counterfeit-Moat-Angle)
 - the Founder E-Comm-Bundle: Stage 4 / Awareness 2-3 / Survival+Approval
 - [brand] Merch: Stage 3 / Awareness 3 / Approval+Power (Identity-Tribe)
-- PLC Bundle: Stage 3 / Awareness 2-3 / Comfort+Approval
+- [brand] Bundle: Stage 3 / Awareness 2-3 / Comfort+Approval
 
 Wenn unklar, frag the Owner:
 "Default Reason-Count = 5/7/9? Awareness ~3 + Sophistication ~4 für [Projekt] — passt das?"
@@ -71,7 +71,7 @@ Wenn unklar, frag the Owner:
 Gerüst (siehe `_universal-patterns.md` Pattern 9). Sections 1-7:
 
 1. **Quantity-Hook Headline** — Pattern 4 Numerical Promise im Headline. Format: "[Number] Gründe warum [Audience-Identity] [Verb] [Brand/Produkt]". Beispiele:
-   - "9 Gründe, warum 14.000 Hamburger Sterne-Köche zu Junsei Titan wechseln"
+   - "9 Gründe, warum 14.000 Hamburger Sterne-Köche zu [brand] Titan wechseln"
    - "5 Gründe, warum 487 Frauen das Mikrobiom-Reset von the Founder über jedes Probiotikum stellen"
 2. **Pain-Agitation Lead** — Status-Quo zerstören. Spezifisch + sensorisch. 60-150 Wörter. Konkrete Kosten der Untätigkeit. Pattern 1 (Specificity) hier dicht. Optional Pattern 12 (Internal-Bridge) wenn the Founder / Health.
 3. **Discovery-Moment / Brand Reveal** — Soft Pivot von Pain → Lösung. "Wir haben uns gefragt, warum noch nie jemand..." / "Das ist [Brand] — gegründet 2023 in Hamburg von [Name]." 80-150 Wörter.
@@ -200,14 +200,14 @@ Default Reason-Count = 5 wenn nicht spezifiziert.
 
 ## Few-Shot Examples
 
-### Example 1: Junsei Titanium Pfanne 7-Gründe (DACH male 30-50 home-cook, Stage 4)
+### Example 1: [brand] Titanium Pfanne 7-Gründe (DACH male 30-50 home-cook, Stage 4)
 
 **Section 1 Headline-Sample:**
-> 7 Gründe, warum 14.872 deutsche Hobbyköche ihre Teflonpfanne entsorgt und auf Junsei Titan gewechselt sind
+> 7 Gründe, warum 14.872 deutsche Hobbyköche ihre Teflonpfanne entsorgt und auf [brand] Titan gewechselt sind
 
 **Section 4 Reason #3 (Voice-Break) Sample:**
 > ### Reason #3: Endlich keine Mikroplastik-Spuren mehr in deinem Frühstücksei.
-> Wir haben unsere ersten Junsei-Pfannen 2023 an 200 Probanden in Hamburg, München und Köln verteilt. Eine Probandin schrieb uns nach 6 Wochen: "Ich konnte heute mein Spiegelei mit der Holzgabel rauskratzen, ohne dass irgendwas am Boden klebte." Wirklich.
+> Wir haben unsere ersten [brand]-Pfannen 2023 an 200 Probanden in Hamburg, München und Köln verteilt. Eine Probandin schrieb uns nach 6 Wochen: "Ich konnte heute mein Spiegelei mit der Holzgabel rauskratzen, ohne dass irgendwas am Boden klebte." Wirklich.
 
 (Pattern 1 Specificity: 14.872 Hobbyköche, 2023, 200 Probanden, 3 Städte. Pattern 10 Voice-Break: "Wirklich." als deutsches Fragment. Pattern 7 Origin-Triple light: Probandin + 6 Wochen + konkrete Szene.)
 

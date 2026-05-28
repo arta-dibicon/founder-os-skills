@@ -43,7 +43,7 @@ Long-form Video Sales Letter (VSL) und Sales-Letter Copywriting nach dem 9-Beat 
 
 ### Step 1: Read Project Context
 
-- Erkenne welches Projekt ([brand] / within-supplements / peptide-venture / team-madsen / pretty-little-cakes etc.) aus Chat-Kontext, working directory, oder explizitem Mention.
+- Erkenne welches Projekt ([brand] / [brand] / [brand] / [brand] / [brand] etc.) aus Chat-Kontext, working directory, oder explizitem Mention.
 - Projekt-`CLAUDE.md` ist auto-loaded. Bewusst nutzen: Brand Voice, Audience, aktuelle Kampagne.
 - Audience-Research suchen in:
   - `[project]/zielgruppen/`
@@ -58,11 +58,11 @@ Long-form Video Sales Letter (VSL) und Sales-Letter Copywriting nach dem 9-Beat 
 - Read `references/POINTERS.md` für Pfade.
 - Lies `_universal-patterns.md` (Sektionen 0, 1, 2 (Pattern 8 Story-VSL Arc!), 5, 6, Section 7 #1+#2 Templates).
 - Lies passenden Cluster:
-  - within-supplements / the Founder / health-supplements / Mikrobiom → `health-wellness.md`
-  - PLC / the Owner / beauty / fitness-baking → `beauty-skincare.md` + `consumer-products.md`
+  - [brand] / the Founder / health-supplements / Mikrobiom → `health-wellness.md`
+  - [brand] / the Owner / beauty / fitness-baking → `beauty-skincare.md` + `consumer-products.md`
   - [brand] / coaching / Peptide-Story-Funnel → `wealth-coaching.md`
   - [brand] weight-loss / Cobra-Coaching / fitness-coaching → `health-wellness.md` + `wealth-coaching.md`
-  - [brand] merch / Junsei / e-commerce → `consumer-products.md` (selten für VSL)
+  - [brand] merch / [brand] / e-commerce → `consumer-products.md` (selten für VSL)
 
 ### Step 3: Determine Schwartz Coordinates
 

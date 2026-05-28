@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bootstrap GCP project + APIs + Service Account + DWD-ready JSON Key.
 # Required env vars:
-#   WS_PROJECT_ID     — GCP project ID (e.g. within-supplements-prod)
+#   WS_PROJECT_ID     — GCP project ID (e.g. [brand]-prod)
 #   WS_PROJECT_NAME   — human-readable name (e.g. "[brand]")
 #   WS_ORG_ID         — organization ID (numeric)
 #   WS_ADMIN_EMAIL    — super admin email (for org policy role)

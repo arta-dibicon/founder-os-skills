@@ -1,6 +1,6 @@
 ---
 name: ano-cohort-analysis
-description: Use für eCom-Projekte (Within, PLC, Wayro, künftige Shops) wenn RFM-Segmentation, Retention-Curves oder LTV-Buckets gebraucht werden. Berechnet `champions`, `at-risk`, `lost`, `new`, `loyal` Buckets wöchentlich. Triggert Flow-Empfehlungen für Klaviyo/Brevo (z.B. Win-Back-Campaign für `at-risk` mit 60-90 Days-Since-Last-Order). Nicht für Coaching/Lead-Gen-Projekte (zu kleine N, andere Buyer-Logik).
+description: Use für eCom-Projekte ([brand], [brand], [brand], künftige Shops) wenn RFM-Segmentation, Retention-Curves oder LTV-Buckets gebraucht werden. Berechnet `champions`, `at-risk`, `lost`, `new`, `loyal` Buckets wöchentlich. Triggert Flow-Empfehlungen für Klaviyo/Brevo (z.B. Win-Back-Campaign für `at-risk` mit 60-90 Days-Since-Last-Order). Nicht für Coaching/Lead-Gen-Projekte (zu kleine N, andere Buyer-Logik).
 metadata:
   status: STUB
   phase: 2
@@ -37,7 +37,7 @@ Pro Cohort: 30/60/90/180/360-Tage-LTV. Vergleich zwischen Acquisition-Quellen (M
 ## Eignung
 
 ✅ [brand], [brand] (wenn Shopify-Daten verbunden), künftige eCom-Projekte
-❌ Coaching/Lead-Gen ([brand], [brand], ZZB) — zu kleine N, Buyer-Cycle anders strukturiert
+❌ Coaching/Lead-Gen ([brand], [brand], [brand]) — zu kleine N, Buyer-Cycle anders strukturiert
 
 ## Stub-Output
 

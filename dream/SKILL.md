@@ -16,9 +16,9 @@ Das Memory-System soll nach dem Durchlauf:
 
 ## Phase 1: Orientierung
 
-1. Lies `MEMORY.md` aus dem Memory-Ordner: `/Users/nathanschneiders/.claude/projects/-Users-nathanschneiders-Documents---antigravity-/memory/MEMORY.md`
+1. Lies `MEMORY.md` aus dem Memory-Ordner: `~/.claude/projects/[workspace-id]/memory/MEMORY.md`
 2. Lies alle Memory-Files in diesem Ordner
-3. Lies die letzten **5 Session-Transcripts** aus: `/Users/nathanschneiders/.claude/projects/-Users-nathanschneiders-Documents---antigravity-/` (JSONL-Files, nach Änderungszeit sortiert, neueste zuerst)
+3. Lies die letzten **5 Session-Transcripts** aus: `~/.claude/projects/[workspace-id]/` (JSONL-Files, nach Änderungszeit sortiert, neueste zuerst)
    - Extrahiere daraus: neue wichtige Infos, Korrekturen, Muster, Präferenzen
 
 ## Phase 2: Analyse

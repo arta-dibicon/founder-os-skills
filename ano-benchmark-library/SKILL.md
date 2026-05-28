@@ -24,7 +24,7 @@ Wenn beide fehlen: explizites Caveat im Diagnose-Output "Benchmark-Anker fehlt, 
 ## Schema (Rechit-Output)
 
 ```yaml
-project: within-supplements
+project: [brand]
 vertical: supplements-dach
 researched_at: 2026-05-08
 source_competitors:
@@ -42,7 +42,7 @@ red_flags: ["..."]
 ## API für andere Ano-Skills
 
 ```python
-benchmark.get("meta_ads.ctr_range", project="within-supplements")
+benchmark.get("meta_ads.ctr_range", project="[brand]")
 # → [1.4, 3.2] oder global-default mit Caveat
 ```
 

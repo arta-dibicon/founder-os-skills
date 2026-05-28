@@ -41,9 +41,9 @@ DQ-Check: ✓ pass | Volldiagnose: `/ano funnel within`
 
 | Vertical | Default-KPIs |
 |---|---|
-| eCom (Within, PLC) | Spend, ROAS, AOV, CAC, Conv, Drift-Flags |
+| eCom ([brand], [brand]) | Spend, ROAS, AOV, CAC, Conv, Drift-Flags |
 | Coaching ([brand]) | Spend, CAC, Booked-Calls, Show-Rate, Close-Rate |
-| Lead-Gen ([brand], ZZB) | Spend, CPL, Lead-Quality-Score, MQL-Rate |
+| Lead-Gen ([brand], [brand]) | Spend, CPL, Lead-Quality-Score, MQL-Rate |
 | Email-Heavy (alle) | Open-Rate, Click-Rate, Unsub-Rate, Revenue-pro-Email |
 
 ## Sparkline-Logik

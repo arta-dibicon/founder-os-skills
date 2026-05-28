@@ -19,7 +19,7 @@ On-Demand Daten-Pull mit Parametern. CLI-Interface plus Programmatic-API. Schrei
 ## Geplante Inputs
 
 ```yaml
-project_id: within-supplements
+project_id: [brand]
 source: meta_ads | klaviyo | shopify | pipedrive | ...
 date_range:
   from: 2026-02-01
@@ -36,7 +36,7 @@ overwrite: true | false  # bei re-sync: alte Rows ersetzen
   "status": "stub",
   "message": "Adhoc-Pull noch nicht gebaut. Würde folgendes ausführen:",
   "would_pull": {
-    "project": "within-supplements",
+    "project": "[brand]",
     "source": "meta_ads",
     "range": "2026-02-01 to 2026-05-10",
     "estimated_rows": "unknown until built"

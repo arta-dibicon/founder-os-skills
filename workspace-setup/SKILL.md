@@ -11,7 +11,7 @@ Du automatisierst jetzt das komplette Google Workspace Setup für ein neues Proj
 ## Voraussetzungen (vor Start prüfen)
 
 Frag the Owner kurz ab (falls nicht im Prompt):
-1. **Projektname** (z.B. "[brand]") → wird Slug: `within-supplements`
+1. **Projektname** (z.B. "[brand]") → wird Slug: `[brand]`
 2. **Domain** (z.B. `example.com`) — muss auf Google Workspace liegen (MX auf google)
 3. **Super Admin E-Mail** (z.B. `arta@example.com`) — Account mit Super-Admin-Rolle, wird Impersonation-Subject
 4. **Organization ID** (aus https://console.cloud.google.com/iam-admin/settings — "Resource ID") falls schon vorhanden, sonst beim ersten GCP-Project-Erstellen anzeigen lassen
@@ -133,7 +133,7 @@ Kopiere `scripts/` aus dem Skill in `{project_folder}/scripts/`:
 
 **Vor Ausführung:** in jedem Script Pfad `KEY` und `IMPERSONATE` auf Projekt anpassen (oder über env vars `{SLUG}_SA_KEY` / `{SLUG}_IMPERSONATE`).
 
-Frag the Owner nach **Ordnerstruktur** (default aus `templates/folder-structure.txt` — im within-supplements-Stil nummeriert 00-10) und **Chat-Space-Namen** (default aus `templates/chat-spaces.txt` — general/content/shop-ads/ebooks/community/ops mit Projekt-Präfix).
+Frag the Owner nach **Ordnerstruktur** (default aus `templates/folder-structure.txt` — im [brand]-Stil nummeriert 00-10) und **Chat-Space-Namen** (default aus `templates/chat-spaces.txt` — general/content/shop-ads/ebooks/community/ops mit Projekt-Präfix).
 
 ```bash
 cd {project_folder}
@@ -164,7 +164,7 @@ Schicke Testnachricht in `{project}-general` via Chat API. Zeige the Owner:
 - Alle Space-IDs
 - Test-Suite-Ergebnis (8/8 grün)
 
-## Bekannte Stolpersteine (aus within-supplements-Lessons)
+## Bekannte Stolpersteine (aus [brand]-Lessons)
 
 1. **GCP ToS nicht akzeptiert** → the Owner muss einmal https://console.cloud.google.com öffnen und durchklicken, bevor CLI-Commands greifen
 2. **Org Policy inheritance** → `inheritFromParent: false` ist Pflicht, sonst greift die Org-Enforcement trotz Projekt-Override

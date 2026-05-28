@@ -116,7 +116,7 @@ Erstelle den Report als Datei:
   - Datum des Checks
   - Welche News gefunden
   - Welche Vorschläge gemacht
-  - Was davon umgesetzt wurde (nach Artas Feedback)
+  - Was davon umgesetzt wurde (nach Feedback des Owners)
 - Damit der nächste Upgrade-Lauf weiß wo er anfangen muss
 
 ## Wichtig

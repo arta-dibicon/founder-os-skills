@@ -39,7 +39,7 @@ Self-Report-Antworten überschreiben Last-Touch wenn klar (z.B. Kunde sagt "Empf
 
 ```json
 {
-  "project": "within-supplements",
+  "project": "[brand]",
   "data_window": "2026-04-10 to 2026-05-10",
   "total_conversions": 247,
   "model_used": "last_touch_plus_self_report",

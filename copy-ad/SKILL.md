@@ -52,10 +52,10 @@ Hook-First Short-Form Ad Copy für Meta (Facebook + Instagram). Default-Output: 
 ### Step 2: Load Foundation
 - `_universal-patterns.md` lesen (Sektion 0, 1 Patterns 1-2-4-7-10-12, 2 — vor allem die Hook-relevanten).
 - Cluster-Datei nach Projekt:
-  - within-supplements / the Founder / health-supplements → `health-wellness.md`
-  - PLC / the Owner / beauty / fitness-baking → `beauty-skincare.md` + `consumer-products.md`
+  - [brand] / the Founder / health-supplements → `health-wellness.md`
+  - [brand] / the Owner / beauty / fitness-baking → `beauty-skincare.md` + `consumer-products.md`
   - [brand] / coaching / Peptide-Story-Funnel → `wealth-coaching.md`
-  - [brand] merch / Junsei / e-commerce → `consumer-products.md`
+  - [brand] merch / [brand] / e-commerce → `consumer-products.md`
   - [brand] weight-loss / fitness-coaching → `health-wellness.md` + `wealth-coaching.md`
 
 ### Step 3: Determine Schwartz Coordinates
@@ -237,7 +237,7 @@ Headline (40): Definiert + schwach. Kennst du das? (38/40)
 Description (25): Cobra-Protokoll erklärt (23/25)
 ```
 
-### Example 3 — PLC Fitness-Cake-Bundle, Numerical-Promise-Hook
+### Example 3 — [brand] Fitness-Cake-Bundle, Numerical-Promise-Hook
 
 **Brief:** Cold FB Ad für the Owner's neues 12-Rezepte-Fitness-Backbuch (€39). Audience: Frauen 28-45, Fitness + süß, Backen-Hobby. Stage 3.
 
@@ -253,7 +253,7 @@ Fertig in unter 45 Minuten. Mit Fotos pro Schritt.
 Bundle ansehen →
 
 Headline (40): 12 Cakes unter 280 kcal — alle getestet (40/40)
-Description (25): Annikas Backstuben-Set (23/25)
+Description (25): the Owner's Backstuben-Set (24/25)
 ```
 
 ---

@@ -18,10 +18,10 @@ Dieser Skill ist der **Orchestrator**. Er kombiniert zwei Schichten:
 
 Bevor du den Skill anwendest, klär ab in welchem Brand-Kontext der Text ist. Quellen in dieser Reihenfolge:
 
-1. **Expliziter Hinweis** im Prompt: "für the Founder", "in Annikas Stimme", "Markus-Voice"
-2. **Pfad-Kontext:** Liegt der Text in `1_aktiv/1_within-supplements/`? → the Founder. `4_pretty-little-cakes/`? → the Owner. `6_liberator-akademie/`? → Markus.
-3. **Asset-Typ + Empfänger:** Newsletter für [brand] → the Founder. Caption für PLC Instagram → the Owner. Email an the Owner → keine Brand, normale B2B-Voice.
-4. **Im Zweifel fragen:** "Soll das in Marens, Annikas oder Markus' Stimme klingen, oder ist das neutral?"
+1. **Expliziter Hinweis** im Prompt: "für the Founder", "in the Owner's Stimme", "Brand-Voice"
+2. **Pfad-Kontext:** Liegt der Text in einem Projektordner mit eindeutiger Brand-Zuordnung? Voice-Profil aus dem zugehörigen `_references/voice-profile.md` lesen.
+3. **Asset-Typ + Empfänger:** Newsletter für [brand] → the Founder. Caption für [brand] Instagram → the Owner. Email an the Owner → keine Brand, normale B2B-Voice.
+4. **Im Zweifel fragen:** "Soll das in einer der definierten Brand-Voices klingen, oder ist das neutral?"
 
 ---
 
@@ -42,7 +42,7 @@ Wenn ein Voice-Skill existiert: dessen SKILL.md vollständig laden und Regeln an
 
 ## SCHRITT 3 — Fallback (kein Brand-Voice-Profil)
 
-Wenn das Projekt keinen eigenen Voice-Skill hat (z.B. [brand], [brand], Peptide, [brand], ZZB, [brand], Longevity, interne the COO-Outputs), gilt nur die Baseline plus diese generischen Human-Voice-Regeln:
+Wenn das Projekt keinen eigenen Voice-Skill hat (z.B. [brand], [brand], Peptide, [brand], [brand], [brand], Longevity, interne the COO-Outputs), gilt nur die Baseline plus diese generischen Human-Voice-Regeln:
 
 ### Du-Anrede oder Sie-Anrede?
 - Default: **Du** (B2C, Coach-Ton, alles was nach moderner Brand klingt)
@@ -135,8 +135,6 @@ Wenn ein neues Projekt genug eigenes Voice-Material hat (mindestens 20 echte Ree
 
 ## SOURCE-TRUTH-PFADE PRO BRAND
 
-- **the Founder:** `1_aktiv/1_within-supplements/content-analysis/output/knowledgebase.jsonl` (678 Reels-Transkripte) + `1_aktiv/1_within-supplements/_references/maren-profile.md`
-- **the Owner:** `1_aktiv/4_pretty-little-cakes/carousel/output/*/caption.txt` (Caption-History) + `1_aktiv/4_pretty-little-cakes/competitor-research/strategy-for-annika-2026-04-22.md`
-- **Markus:** `1_aktiv/6_liberator-akademie/_research/02-cla-audit/04-brand-voice.md` + `1_aktiv/6_liberator-akademie/_research/03-internet-research/04-voice-dna.md`
+Pro Projekt liegt ein Voice-Profil in `[projekt]/_references/voice-profile.md` oder vergleichbar. Zusätzlich Caption-/Transkript-Quellen pro Projekt nutzen (z.B. `content-analysis/output/*.jsonl`, `carousel/output/*/caption.txt`).
 
 Bei Zweifeln über die Voice: 3 zufällige Quellen ziehen, Tonalität abgleichen.

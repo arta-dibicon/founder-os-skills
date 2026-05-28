@@ -34,15 +34,15 @@ Email-Copywriting nach 6-Block Email Anatomy. Default-Output: Deutsch, DACH-Mark
 - Read project's `CLAUDE.md` (auto-loaded) — Brand-Voice, Audience, aktive Kampagnen, Tonalität.
 - Audience-Research suchen in `[project]/zielgruppen/`, `[project]/audience-research/`, `[project]/research/` oder `[project]/_memory/INDEX.md`.
 - Constraints aus dem Brief notieren: Sequenz-Typ (welcome / launch / re-activation / etc.), Anzahl Emails, Produkt, Preis, Audience-Stage (Subscriber-fresh oder Subscriber-cold), Deadline, Tool (Klaviyo / Brevo / Resend).
-- Bei [brand]-Kontext: `arta@example.com` als Sender, Brevo als Tool. Bei the Founder / PLC / [brand]: nicht Brevo (siehe `feedback_brevo_madsen_only`).
+- Bei [brand]-Kontext: `arta@example.com` als Sender, Brevo als Tool. Bei the Founder / [brand] / [brand]: nicht Brevo (siehe `feedback_brevo_madsen_only`).
 
 ### Step 2: Load Foundation
 - `_universal-patterns.md` lesen (Sektion 0, Pattern 1-2-4-5-7-8-10-12, 5).
 - Cluster-Datei nach Projekt:
-  - within-supplements / the Founder / health-supplements → `health-wellness.md`
-  - PLC / the Owner / beauty / fitness-baking → `beauty-skincare.md` + `consumer-products.md`
+  - [brand] / the Founder / health-supplements → `health-wellness.md`
+  - [brand] / the Owner / beauty / fitness-baking → `beauty-skincare.md` + `consumer-products.md`
   - [brand] / coaching / Peptide-Story-Funnel → `wealth-coaching.md`
-  - [brand] merch / Junsei / e-commerce → `consumer-products.md`
+  - [brand] merch / [brand] / e-commerce → `consumer-products.md`
   - [brand] weight-loss / fitness-coaching → `health-wellness.md` + `wealth-coaching.md`
 
 ### Step 3: Determine Schwartz Coordinates
@@ -289,9 +289,9 @@ Subject-Alternatives für Split-Test:
 Pattern: Pattern 8 Beat 1+6 (Origin + Personal Proof) + Pattern 7 (Origin-Triple) + Pattern 11 (Convenience-Path Urgency, kein Discount)
 ```
 
-### Example 3 — PLC Reactivation Email (Curiosity-Gap Subject)
+### Example 3 — [brand] Reactivation Email (Curiosity-Gap Subject)
 
-**Brief:** PLC Re-Activation für Subscriber, die 90 Tage nicht geöffnet haben. Audience: Frauen 28-45, Backen + Fitness, abgekühlt.
+**Brief:** [brand] Re-Activation für Subscriber, die 90 Tage nicht geöffnet haben. Audience: Frauen 28-45, Backen + Fitness, abgekühlt.
 
 **Output:**
 ```

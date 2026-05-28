@@ -29,7 +29,7 @@ Owner sagt eine der Trigger-Phrasen, oder du erkennst dass der Chat lang wird (>
 ```markdown
 # Chat: <kurzer Titel>
 Datum: YYYY-MM-DD
-Venture: <z.B. takori-au oder cross-venture>
+Venture: <z.B. [brand] oder cross-venture>
 Status: in-progress | done | archived
 
 ## Was wir gemacht haben

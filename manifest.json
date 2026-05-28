@@ -46,7 +46,7 @@
     {
       "name": "ano-cohort-analysis",
       "tier": "diagnostics",
-      "description": "Use für eCom-Projekte (Within, PLC, Wayro, künftige Shops) wenn RFM-Segmentation, Retention-Curves oder LTV-Buckets gebraucht werden. Berechnet `champions`, `at-risk`, `lost`, `new`, `loyal` Buckets wöchentlich. Triggert Flow-Empfehlungen für Klav...",
+      "description": "Use für eCom-Projekte ([brand], [brand], [brand], künftige Shops) wenn RFM-Segmentation, Retention-Curves oder LTV-Buckets gebraucht werden. Berechnet `champions`, `at-risk`, `lost`, `new`, `loyal` Buckets wöchentlich. Triggert Flow-Empfehlungen f...",
       "auto_install": false
     },
     {
